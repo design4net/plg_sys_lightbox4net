@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" group="system" method="upgrade">
+    <name>PLG_SYS_LIGHTBOX4NET</name>
+    <author>Design4Net (Sergey Kupletsky)</author>
+    <creationDate>April 23, 2014</creationDate>
+    <copyright>Copyright by Design4Net (C) 2013-2014. All rights reserved.</copyright>
+	<license>GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>s_kupletsky@mail.ru</authorEmail>
+	<authorUrl>http://design4net.ru/</authorUrl>
+    <version>1.0.0RC</version>
+    <description>PLG_SYS_LIGHTBOX4NET_XML_DESCRIPTION</description>
+		
+    <files>
+        <filename plugin="lightbox4net">lightbox4net.php</filename>
+        <filename>lightbox4net.xml</filename>
+        <filename>index.html</filename>
+    </files>
+
+	<media destination="plg_system_lightbox4net" folder="media">
+        <folder>css</folder>
+        <folder>img</folder>
+        <folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+	
+    <languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_lightbox4net.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_lightbox4net.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_lightbox4net.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_system_lightbox4net.sys.ini</language>
+    </languages>
+	
+    <config>
+		<fields name="params">
+            <fieldset name="basic">
+
+                <field name="fullscreen" type="radio" class="btn-group" default="0" label="PLG_SYS_LIGHTBOX4NET_FULLSCREEN" description="PLG_SYS_LIGHTBOX4NET_FULLSCREEN_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field name="show-controls" type="radio" class="btn-group" default="1" label="PLG_SYS_LIGHTBOX4NET_NAVIGATION" description="PLG_SYS_LIGHTBOX4NET_NAVIGATION_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+				
+				<field name="show-title" type="radio" class="btn-group" default="1" label="PLG_SYS_LIGHTBOX4NET_TITLE" description="PLG_SYS_LIGHTBOX4NET_TITLE_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+				
+                <field name="show-autoplay" type="radio" class="btn-group" default="1" label="PLG_SYS_LIGHTBOX4NET_AUTOPLAY" description="PLG_SYS_LIGHTBOX4NET_AUTOPLAY_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field name="show-indicator" type="radio" class="btn-group" default="1" label="PLG_SYS_LIGHTBOX4NET_INDICATOR" description="PLG_SYS_LIGHTBOX4NET_INDICATOR_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+				
+            </fieldset>
+        </fields>
+	</config>
+</extension>
